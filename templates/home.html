@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shop</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background: linear-gradient(90deg, #ff7e5f, #feb47b);
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            padding: 1rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #ff7e5f;
+            border-radius: 5px;
+        }
+        main {
+            padding: 3rem;
+            text-align: center;
+            background-color: #fff;
+        }
+        main h2 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        .info {
+            margin: 2rem auto;
+            max-width: 600px;
+            text-align: left;
+        }
+        .buttons a {
+            display: inline-block;
+            background-color: #ff7e5f;
+            color: #fff;
+            padding: 1rem 2rem;
+            margin: 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .buttons a:hover {
+            background-color: #feb47b;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Online Shop</h1>
+    </header>
+    <nav>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'registration' %}">Register</a>
+        <a href="{% url 'login' %}">Login</a>
+        <a href="{% url 'cart' %}">Cart</a>
+    </nav>
+    <main>
+        <h2>Discover Our Exclusive Collection</h2>
+        <div class="info">
+            <p>Welcome to our online shop where you can find a wide range of products to suit your needs. Register to start shopping, or log in if you already have an account. Check your cart to see items you've added and proceed to checkout. We're committed to providing the best shopping experience.</p>
+        </div>
+        <div class="buttons">
+            <a href="{% url 'registration' %}">Register</a>
+            <a href="{% url 'login' %}">Login</a>
+            <a href="{% url 'cart' %}">Cart</a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Tavhid Online Shop Rahimi 11.</p>
+    </footer>
+</body>
+</html>

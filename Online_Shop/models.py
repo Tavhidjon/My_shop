@@ -5,6 +5,8 @@ class Person(models.Model):
     last_name = models.CharField(max_length=50)
     age = models.IntegerField(null=False)
     email = models.EmailField(max_length=100)
+    def __str__(self):
+        return self.firs_name
 
 
 class Register(models.Model):
@@ -12,7 +14,8 @@ class Register(models.Model):
     password = models.CharField(max_length=100)
     email = models.EmailField(max_length=100, unique=True)
     created_at = models.DateTimeField(auto_now_add=True)
-
+    def __str__(self):
+        return self.username
 
 
 

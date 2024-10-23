@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.views.generic import TemplateView
+from .models import *
 
 class HomePageView(TemplateView):
     template_name="home.html"
@@ -15,3 +16,8 @@ class Login(TemplateView):
 
 class Cart(TemplateView):
     template_name="cart.html"
+
+
+
+def Extra(request):
+    per=Person.objects.all()

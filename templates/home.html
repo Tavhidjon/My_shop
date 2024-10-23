@@ -1,77 +1,11 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
     <title>Online Shop</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-        header {
-            background: linear-gradient(90deg, #ff7e5f, #feb47b);
-            color: #fff;
-            padding: 2rem 0;
-            text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        nav {
-            display: flex;
-            justify-content: space-around;
-            background-color: #333;
-            padding: 1rem;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1rem;
-            padding: 0.5rem 1rem;
-            transition: background-color 0.3s;
-        }
-        nav a:hover {
-            background-color: #ff7e5f;
-            border-radius: 5px;
-        }
-        main {
-            padding: 3rem;
-            text-align: center;
-            background-color: #fff;
-        }
-        main h2 {
-            color: #333;
-            margin-bottom: 1rem;
-        }
-        .info {
-            margin: 2rem auto;
-            max-width: 600px;
-            text-align: left;
-        }
-        .buttons a {
-            display: inline-block;
-            background-color: #ff7e5f;
-            color: #fff;
-            padding: 1rem 2rem;
-            margin: 1rem;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        .buttons a:hover {
-            background-color: #feb47b;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 1rem;
-            text-align: center;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
 </head>
 <body>
     <header>
